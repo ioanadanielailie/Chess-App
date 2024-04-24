@@ -1,0 +1,11 @@
+:root{
+    --square-size:100px;
+    --square-white:#F9E0BB ;
+    --square-black:#C38154;
+    --background-color:black ;
+}
+@media all and(max-width:450px){
+    :root{
+        --square-size:50px;
+    }
+}
