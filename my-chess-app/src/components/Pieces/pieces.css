@@ -1,0 +1,27 @@
+@import "../../constants.css";
+.pieces{
+    position:absolute;
+    left: calc(.25*var(--square-size));
+    right:0;
+    top:0;
+    bottom: calc(.25*var(--square-size));
+}
+.piece{
+    position: absolute;
+    width: 12.5%; 
+    height: 12.5%;
+    background-size: 100%;
+
+}
+
+.piece.BlackRook {background-image: url('../../../public/images/BlackRook.png');}
+.piece.BlackKing {background-image: url('../../../public/images/BlackKing.png');}
+.piece.BlackBishop {background-image: url('../../../public/images/BlackBishop.png');}
+.piece.BlackKnight {background-image: url('../../../public/images/BlackKnight.png');}
+.piece.BlackQueen {background-image: url('../../../public/images/BlackQueen.png');}
+
+.piece.WhiteRook {background-image: url('../../../public/images/WhiteRook.png');}
+.piece.WhiteKing {background-image: url('../../../public/images/WhiteKing.png');}
+.piece.WhiteBishop {background-image: url('../../../public/images/WhiteBishop.png');}
+.piece.WhiteKnight {background-image: url('../../../public/images/WhiteKnight.png');}
+.piece.WhiteQueen {background-image: url('../../../public/images/WhiteQueen.png');}

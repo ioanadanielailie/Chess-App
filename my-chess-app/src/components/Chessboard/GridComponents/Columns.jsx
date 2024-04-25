@@ -1,11 +1,12 @@
 import React from "react";
 import "./columns.css";
+import { getCharacter } from "../../../helper";
 
 const Columns = ({ columns }) => {
   return (
     <div className="columns">
       {columns?.map((column) => (
-        <span>{column}</span>
+        <span key={column}>{getCharacter(column)}</span>
       ))}
     </div>
   );
