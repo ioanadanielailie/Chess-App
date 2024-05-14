@@ -1,11 +1,42 @@
 :root{
     --square-size:100px;
     --square-white:#F9E0BB ;
-    --square-black:#C38154;
-    --background-color:black ;
+    --square-black:#A76438;
+    --background-color:rgb(36, 19, 0) ;
 }
-@media all and(max-width:450px){
-    :root{
-        --square-size:50px;
+
+@media all and (max-width: 850px) {
+    :root {
+        --square-size : 80px;
+    }
+}
+
+@media all and (max-width: 680px) {
+    :root {
+        --square-size : 70px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    :root {
+        --square-size : 60px;
+    }
+}
+
+@media all and (max-width: 510px) {
+    :root {
+        --square-size : 50px;
+    }
+}
+
+@media all and (max-width: 430px) {
+    :root {
+        --square-size : 40px;
+    }
+}
+
+@media all and (max-height: 850px) {
+    :root {
+        --square-size : 80px;
     }
 }

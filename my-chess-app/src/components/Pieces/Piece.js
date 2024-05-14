@@ -1,7 +1,7 @@
 const Piece = ({ row, column, piece }) => {
   const onDragStart = (e) => {
     e.dataTransfer.effectAllowed = "move";
-    e.dataTransfer.setData("text/plain", `${piece},${column}, ${row}`);
+    e.dataTransfer.setData("text/plain", `${piece},${row}, ${column}`);
     setTimeout(() => {
       e.target.style.display = "none";
     }, 0);
@@ -12,8 +12,8 @@ const Piece = ({ row, column, piece }) => {
     <div
       className={`piece ${piece} p-${column}${row}`}
       draggable={true}
-      onDragEnd={onDragEnd}
       onDragStart={onDragStart}
+      onDragEnd={onDragEnd}
     ></div>
   );
 };
